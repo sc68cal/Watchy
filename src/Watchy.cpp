@@ -349,6 +349,8 @@ void Watchy::showAbout() {
   display.print("h");
   display.print(minutes);
   display.print("m");    
+  display.print("IP address: ");
+  display.print(WiFi.localIP());
   display.display(false); // full refresh
 
   guiState = APP_STATE;
